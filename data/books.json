@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "price": 1200,
+    "category": "Self Development",
+    "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+  },
+  {
+    "id": 2,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 950,
+    "category": "Fiction",
+    "image": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "price": 1100,
+    "category": "Finance",
+    "image": "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Ikigai",
+    "author": "Hector Garcia",
+    "price": 850,
+    "category": "Self Development",
+    "image": "https://covers.openlibrary.org/b/isbn/9780143130727-L.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "price": 1300,
+    "category": "Finance",
+    "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Harry Potter",
+    "author": "J.K. Rowling",
+    "price": 1500,
+    "category": "Fantasy",
+    "image": "https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "price": 1800,
+    "category": "Technology",
+    "image": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+  }
+]

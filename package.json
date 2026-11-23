@@ -1,0 +1,16 @@
+{
+  "name": "online-book-store",
+  "version": "1.0.0",
+  "description": "Online bookstore using HTML, CSS, Bootstrap, JavaScript and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
