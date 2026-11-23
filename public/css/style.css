@@ -1,0 +1,101 @@
+
+/* general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* navigation */
+.navbar-brand {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+/* hero section */
+.hero {
+    background: linear-gradient(120deg, #343a40, #66523d);
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 15px 0 25px;
+}
+
+/* book cards */
+.book-card {
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.book-cover {
+    height: 230px;
+    width: 100%;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+}
+
+.book-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card .card-body .btn {
+    margin-top: auto;
+}
+
+/* search field */
+.search-box {
+    max-width: 300px;
+}
+
+/* form */
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* cart */
+#cart {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+/* responsive styling */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .search-box {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .form-section {
+        padding: 18px;
+    }
+}

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Haven | Online Book Store</title>
+
+    <!-- bootstrap css -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Book Haven</a>
+
+            <div class="ms-auto">
+                <a href="#books" class="btn btn-outline-light me-2">Books</a>
+                <a href="#add-book" class="btn btn-outline-light me-2">Add Book</a>
+                <a href="#cart" class="btn btn-warning">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1>Discover Your Next Favorite Book</h1>
+            <p>Explore, discover and shop your favorite books.</p>
+            <a href="#books" class="btn btn-warning btn-lg">
+                Explore Books
+            </a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+        <!-- books section -->
+        <section id="books">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                <h2>Our Book Collection</h2>
+
+                <input
+                    type="text"
+                    id="search-input"
+                    class="form-control search-box"
+                    placeholder="Search books or authors...">
+            </div>
+
+            <div class="row g-4" id="book-list">
+                <!-- books generated dynamically using javascript -->
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- add book form -->
+        <section id="add-book" class="form-section">
+            <h2 class="mb-4">Add a New Book</h2>
+
+            <form id="book-form" class="row g-3">
+
+                <div class="col-md-6">
+                    <label class="form-label">Book Title</label>
+                    <input type="text" id="title" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Author</label>
+                    <input type="text" id="author" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Price (PKR)</label>
+                    <input type="number" id="price" class="form-control"
+                        min="1" step="0.01" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Category</label>
+                    <select id="category" class="form-select" required>
+                        <option value="">Select Category</option>
+                        <option>Fiction</option>
+                        <option>Fantasy</option>
+                        <option>Finance</option>
+                        <option>Self Development</option>
+                        <option>Education</option>
+                        <option>Technology</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Book Cover Image URL (Optional)</label>
+                    <input type="url" id="image" class="form-control"
+                        placeholder="https://example.com/book.jpg">
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-dark">
+                        Add Book
+                    </button>
+                </div>
+
+            </form>
+
+            <p id="form-message" class="mt-3"></p>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- shopping cart section -->
+        <section id="cart">
+            <h2 class="mb-4">Shopping Cart</h2>
+
+            <div id="cart-items" class="list-group mb-3">
+                <p class="text-muted">Your cart is empty.</p>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h4>Total: PKR <span id="cart-total">0</span></h4>
+
+                <button class="btn btn-danger" id="clear-cart">
+                    Clear Cart
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2026 Book Haven | Online Book Store</p>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
